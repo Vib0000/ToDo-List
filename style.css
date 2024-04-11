@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    min-height: 100vh;
+}
+
+h1,
+form,
+.todo-list-container,
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+h1{
+    color: rgb(240, 248, 176);
+}
+
+input,
+button{
+    border: none;
+    outline:none;
+    font-size: 1.5rem;
+}
+
+.input-box{
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+.fa-solid{
+    padding: 0.6rem;
+    cursor: pointer;
+}
+
+.todo-container{
+    background-color: white;
+    min-height: fit-content;
+    margin-bottom: 1rem;
+}
+
+.todo-item{
+    list-style: none;
+    flex-grow: 1;
+    color: rgb(41, 3, 22);
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+}
+
+.delete-btn
+{
+    color: white;
+    cursor:pointer;
+    background-color: rgb(163, 37, 37);
+}
+.complete-btn{
+    color: snow;
+    cursor:pointer;
+    background-color: rgb(2, 94, 2);
+}
+
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.fa-circle-check,
+.fa-trash-can{
+    pointer-events: none;
+}
